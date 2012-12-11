@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>getByClass</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+    <ul id="menu">
+      <li class="active">I'm active</li>
+      <li class="inactive">I'm inactive one</li>
+      <li class="inactive">I'm inactive two</li>
+    </ul>
+
+    <button onclick="getActive();">Get active</button>
+    <button onclick="getInactive();">Get inactive</button>
+    <button onclick="getOneInactive();">Get one inactive</button>
+
+
+    <script src="../build/build.js"></script>
+
+    <script>
+      var getByClass = require('get-by-class');
+      var menu = document.getElementById('menu');
+
+      function getActive(e) {
+        console.log(getByClass('active', menu));
+      }
+
+      function getInactive(e) {
+        console.log(getByClass('inactive', menu));
+      }
+
+      function getOneInactive(e) {
+        console.log(getByClass('inactive', menu, true));
+      }
+    </script>
+  </body>
+</html>
