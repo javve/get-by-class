@@ -18,6 +18,14 @@ module.exports = (function() {
         return container.getElementsByClassName(className);
       }
     };
+  } else if (document.querySelector) {
+    return function(className, container, single) {
+      if (single) {
+        return container.querySelector(className);
+      } else {
+        return container.querySelectorAll(className);
+      }
+    };
   } else {
     return function(className, container, single) {
       var classElements = [],
