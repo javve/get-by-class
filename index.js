@@ -19,7 +19,7 @@ module.exports = (function() {
       }
     };
   } else if (document.querySelector) {
-    return function(className, container, single) {
+    return function(container, className, single) {
       if (single) {
         return container.querySelector(className);
       } else {
