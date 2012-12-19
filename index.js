@@ -11,7 +11,7 @@
 
 module.exports = (function() {
   if (document.getElementsByClassName) {
-    return function(className, container, single) {
+    return function(container, className, single) {
       if (single) {
         return container.getElementsByClassName(className)[0];
       } else {
@@ -27,7 +27,7 @@ module.exports = (function() {
       }
     };
   } else {
-    return function(className, container, single) {
+    return function(container, className, single) {
       var classElements = [],
         tag = '*';
       if (container == null) {

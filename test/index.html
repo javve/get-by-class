@@ -22,15 +22,15 @@
       var menu = document.getElementById('menu');
 
       function getActive(e) {
-        console.log(getByClass('active', menu));
+        console.log(getByClass(menu, 'active'));
       }
 
       function getInactive(e) {
-        console.log(getByClass('inactive', menu));
+        console.log(getByClass(menu, 'inactive'));
       }
 
       function getOneInactive(e) {
-        console.log(getByClass('inactive', menu, true));
+        console.log(getByClass(menu, 'inactive', true));
       }
     </script>
   </body>

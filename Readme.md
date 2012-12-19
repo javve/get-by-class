@@ -19,15 +19,15 @@ var getByClass = require('get-by-class');
 var menu = document.getElementById('menu');
 
 // Returns set of items
-var activeItem = getByClass('active', menu);
+var activeItem = getByClass(menu, 'active');
 
 // Returns single item
-var activeItem = getByClass('active', menu, true);
+var activeItem = getByClass(menu, 'active', true);
 ```
 
 ## API
 
-### getByClass(className, container, single)
+### getByClass(container, className, single)
 
 Find all elements with class `className` inside `container`.  
 Use `single = true` to increase performance in older browsers
