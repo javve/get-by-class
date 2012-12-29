@@ -7,6 +7,11 @@ Heavily based on [Dustin Diaz](https://github.com/ded)'s function: [http://dusti
 
 Uses default `getElementsByClassName` if it's available.
 
+## Component
+Built to be used with the [Component package manager](https://github.com/component/component). Read more here:
+* [Component at Github](https://github.com/component/component)
+* [TJ Holowaychuk's introduction](http://tjholowaychuk.com/post/27984551477/components)
+
 ## Installation
 
     $ component install javve/get-by-class
