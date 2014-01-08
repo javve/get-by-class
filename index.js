@@ -20,6 +20,7 @@ module.exports = (function() {
     };
   } else if (document.querySelector) {
     return function(container, className, single) {
+      className = '.' + className;
       if (single) {
         return container.querySelector(className);
       } else {
