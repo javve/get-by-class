@@ -2,7 +2,7 @@
   "name": "get-by-class",
   "repo": "javve/get-by-class",
   "description": "A cross-browser implementation of getElementsByClass",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": ["class", "classname"],
   "scripts": [
     "index.js"
