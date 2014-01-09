@@ -6,5 +6,6 @@
   "keywords": ["class", "classname"],
   "scripts": [
     "index.js"
-  ]
+  ],
+  "twitter": "@javve"
 }
