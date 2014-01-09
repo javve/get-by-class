@@ -22,15 +22,17 @@
       var menu = document.getElementById('menu');
 
       function getActive(e) {
-        console.log(getByClass(menu, 'active'));
+       alert(getByClass(menu, 'active')[0].innerHTML);
       }
 
       function getInactive(e) {
-        console.log(getByClass(menu, 'inactive'));
+        alert('Number of items: ' + getByClass(menu, 'inactive').length);
+        alert(getByClass(menu, 'inactive')[0].innerHTML);
+        alert(getByClass(menu, 'inactive')[1].innerHTML);
       }
 
       function getOneInactive(e) {
-        console.log(getByClass(menu, 'inactive', true));
+        alert(getByClass(menu, 'inactive', true).innerHTML);
       }
     </script>
   </body>
