@@ -10,7 +10,8 @@
  */
 
 module.exports = (function() {
-  if (document.getElementsByClassName) {
+  var chkDiv = document.createElement("DIV");
+  if (chkDiv.getElementsByClassName) {
     return function(container, className, single) {
       if (single) {
         return container.getElementsByClassName(className)[0];
